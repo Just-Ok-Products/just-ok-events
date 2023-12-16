@@ -1,0 +1,22 @@
+.page {
+  background-color: rgb(75, 141, 119);
+}
+.header {
+  height: 5vh;
+  overflow: hidden;
+}
+.content {
+  height: 90vh;
+  overflow: auto;
+}
+.footer {
+  height: 5vh;
+  overflow: hidden;
+}
+
+mat-toolbar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(75, 141, 119);
+}

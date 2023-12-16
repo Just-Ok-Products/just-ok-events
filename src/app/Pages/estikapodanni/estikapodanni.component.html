@@ -1,0 +1,22 @@
+<div class="content text-center">
+  <h1>Capodanno 2023?</h1>
+  <h1>ESTIK...apodanni!</h1>
+  <p>
+    Ehi, habitante del 2024!<br/>
+    Sta per sbucare da dietro l'angolo con una valigia piena di pappagalli parlanti e bolle di sapone danzanti!<br/>
+    Unisciti alla festa di Capodanno più pazza della tua dimensione!<br/>
+    Avremo una musica così accattivante che persino gli alieni balleranno, animazione con giraffe acrobatiche e divertimento garantito da un gruppo di pinguini giocolieri!<br/>
+    Scegli qui sotto l'opzione che sembra più vicina a un sogno erotico brutto, ma di cui non riesci a farne a meno e fa che sia il piano Luxury!<br/>
+    Non farti sfuggire l'occasione di iniziare l'anno in uno stato di pura confusione!
+  </p>
+  <div style="height: 20px;"></div>
+  <div class="plans-container">
+    <app-plan-card
+      *ngFor="let plan of plans"
+      [name]="plan.name"
+      [price]="plan.price"
+      [percs]="plan.percs"
+      [color]="plan.color"
+    ></app-plan-card>
+  </div>
+</div>

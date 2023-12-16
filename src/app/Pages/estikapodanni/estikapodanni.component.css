@@ -1,0 +1,11 @@
+.plans-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  margin-left: 25px;
+  margin-right: 25px;
+}
