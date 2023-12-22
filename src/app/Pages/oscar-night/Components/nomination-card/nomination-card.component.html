@@ -1,0 +1,18 @@
+<mat-card style="overflow: hidden;">
+  <mat-card-title style="display: flex;flex-direction: row">
+    Nomination per: {{nomination}}
+    <div style="flex: 1 1 auto"></div>
+    <button mat-button (click)="switchState()"  *ngIf="state == 'collapsed'">Expand</button>
+    <button mat-button (click)="switchState()"  *ngIf="state == 'expanded'">Collapse</button>
+  </mat-card-title>
+  <mat-card-content [@bodyExpansion]="state">
+    <mat-selection-list [multiple]="false" [disabled]="voted">
+      <mat-list-option *ngFor="let name of names">{{name}}</mat-list-option>
+    </mat-selection-list>
+    <div style="display: flex;flex-direction: row">
+      <div style="flex: 1 1 auto;"></div>
+      <button *ngIf="!voted" mat-button (click)="sendVote()">Vota</button>
+      <button *ngIf="voted" mat-button disabled="true" (click)="sendVote()">Votato</button>
+    </div>
+  </mat-card-content>
+</mat-card>

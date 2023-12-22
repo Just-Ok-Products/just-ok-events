@@ -1,0 +1,9 @@
+<h1>La serata degli oscar della Gang</h1>
+<p>
+  È il momento tanto atteso! La Gang è pronta a svelare le nomination per la Serata degli Oscar! Preparatevi per una dose massiccia di emozioni, suspense e divertimento. Gli Oscar della Gang stanno per portarvi in un viaggio indimenticabile attraverso i momenti più epici dell'anno appena trascorso.
+</p>
+<app-nomination-card
+  *ngFor="let nomination of nominations"
+  [names]="nomination.names"
+  [nomination]="nomination.nomination"
+></app-nomination-card>

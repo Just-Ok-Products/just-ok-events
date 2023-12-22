@@ -1,11 +1,18 @@
 <div class="page">
   <div class="header mat-elevation-z2">
-    <mat-toolbar>
-      <span>Just Ok Events</span>
-    </mat-toolbar>
+    <nav mat-tab-nav-bar [tabPanel]="navPanel">
+      <a
+        mat-tab-link
+        [active]="activeLink == link"
+        (click)="navigateToPage(link)"
+        *ngFor="let link of links"
+      >{{link | uppercase}}</a>
+    </nav>
   </div>
   <div class="content">
-    <router-outlet></router-outlet>
+    <mat-tab-nav-panel #navPanel>
+      <router-outlet></router-outlet>
+    </mat-tab-nav-panel>
   </div>
   <div class="footer mat-elevation-z2">
     <mat-toolbar>

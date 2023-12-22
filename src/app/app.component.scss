@@ -1,5 +1,5 @@
 .page {
-  background-color: rgb(75, 141, 119);
+  background-color: rgb(33, 48, 43);
 }
 .header {
   height: 5vh;
@@ -7,6 +7,8 @@
 }
 .content {
   height: 90vh;
+  margin-left: 25px;
+  margin-right: 25px;
   overflow: auto;
 }
 .footer {
@@ -18,5 +20,10 @@ mat-toolbar {
   height: 100%;
   display: flex;
   flex-direction: row;
-  background-color: rgb(75, 141, 119);
+  background-color: rgb(33, 48, 43);
+  color: aliceblue;
+}
+
+:host ::ng-deep .mdc-tab__text-label {
+  --mat-tab-header-inactive-label-text-color: aliceblue
 }

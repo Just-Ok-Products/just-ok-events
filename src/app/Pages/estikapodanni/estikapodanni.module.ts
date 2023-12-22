@@ -13,6 +13,10 @@ import { LastDayPopupComponent } from './Components/last-day-popup/last-day-popu
     MatCardModule,
     MatListModule
   ],
-  declarations: [EstikapodanniComponent, PlanCardComponent, LastDayPopupComponent]
+  declarations: [
+    EstikapodanniComponent,
+    PlanCardComponent,
+    LastDayPopupComponent
+  ]
 })
 export class EstikapodanniModule { }

@@ -11,10 +11,20 @@ export class SnackbarService {
     private _snackbar: MatSnackBar
   ) { }
 
+  private dismiss() {
+
+  }
+
   public openSnackbar(message: string) {
+    this._snackbar.open(message, 'Dismiss', {
+      verticalPosition: 'bottom'
+    })
+  }
+
+  public openTimedSnackbar(message: string) {
     this._snackbar.open(message, undefined, {
-      duration: 2000,
-      verticalPosition: 'top'
+      verticalPosition: 'bottom',
+      duration: 1500
     })
   }
 
